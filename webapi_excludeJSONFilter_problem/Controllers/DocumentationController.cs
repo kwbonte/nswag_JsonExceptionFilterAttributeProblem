@@ -10,7 +10,7 @@ namespace webapi_excludeJSONFilter_problem.Controllers
         [HttpGet]
         public JsonResult<int[]> Get()
         {
-            throw new System.Exception("custom exception message not showing up on console");
+            throw new System.Exception("this is the exception message we expect to see, if you hit f5 you will see the other exception");
         }
     }
 }
